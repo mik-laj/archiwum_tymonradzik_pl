@@ -1,0 +1,59 @@
+{% block head %}
+
+{% endblock %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}{% endblock %} - {{ app_info.name }}</title>
+        <meta name="description" content="{% block description%}{{ app_info.lead }}{% endblock %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="/static/css/style.css" />
+    </head>
+<header>
+  <div class="container">
+    <div class="page-title">{{ app_info.name }}</div>
+    <div class="page-lead">{{ app_info.lead }}</div>
+  </div>
+</header>
+<section class="breadcrumbs-section">
+  <div class="container">
+    <div class="breadcrumbs">
+        <div class="breadcrumbs--item"><a href="">Lorem.</a></div>
+        <div class="breadcrumbs--item"><a href="">Molestiae.</a></div>
+        <div class="breadcrumbs--item"><a href="">Laboriosam.</a></div>
+        <div class="breadcrumbs--item"><a href="">Repellendus?</a></div>
+        <div class="breadcrumbs--item"><a href="">Possimus!</a></div>
+      </div>
+  </div>
+</section>
+<main>
+  <div class="container">
+    {% block content %}
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odit maiores accusantium! Delectus alias fugiat culpa unde possimus, saepe cumque laudantium repellendus rem, esse laboriosam vero. Veniam adipisci explicabo ipsum.</p>
+        <p>Atque mollitia sed, ea dolore odio praesentium natus dignissimos nemo harum quasi. Mollitia ex nostrum non id, debitis, incidunt sapiente amet temporibus nam fuga velit, provident rem ipsum quod illo.</p>
+        <p>Necessitatibus omnis, consectetur repellat alias ad id labore doloremque illo ea minima nemo deleniti iure quae minus corrupti animi error recusandae nostrum esse doloribus, vel distinctio consequatur, quos. Animi, perferendis.</p>
+        <p>Vero expedita consequuntur, odit fugiat, possimus asperiores dicta ullam? Iure ad fugit repellat facere, quam sunt dicta, maiores cumque animi nisi neque sit non exercitationem, ratione assumenda. Maiores, sunt, ullam!</p>
+        <p>Excepturi similique officiis repudiandae ipsum qui cum enim, velit veritatis obcaecati dolorum iusto, iste animi dignissimos earum. Animi impedit maiores, ducimus iure voluptate soluta dolore, sapiente est possimus corrupti. Obcaecati.</p>
+        <p>Distinctio officiis assumenda enim harum quaerat, voluptate velit quo consequuntur vitae iure mollitia magni facilis impedit tempora maiores ratione, eos sint, veniam sapiente tenetur repellendus nam, ad quasi. Sed, totam!</p>
+        <p>Ex fugit, iure beatae quia officia. Eum ea tempore quibusdam ad molestias possimus debitis id fugiat suscipit accusantium. Repellat doloremque laborum optio repellendus blanditiis nostrum nihil eum laudantium omnis fugit!</p>
+        <p>Neque iusto ab cupiditate officiis quos rem consectetur quisquam. Obcaecati dolore sapiente illo ex necessitatibus sunt odio deserunt quisquam neque molestiae atque aliquid consequatur nam quos, eos laboriosam, veniam, numquam.</p>
+        <p>Nemo libero cupiditate porro dolor quas quasi quisquam, repudiandae nisi enim officia vero a labore facere assumenda? Praesentium sunt, perferendis sapiente ea, totam minus dolor asperiores eos deserunt ut, modi?</p>
+        <p>Perspiciatis tempore quia placeat cumque provident quasi corrupti recusandae numquam enim repudiandae rerum inventore beatae rem officiis consequuntur atque eius ex, at dicta, voluptatum error sed, laborum. Neque, aperiam sed.</p>
+    {% endblock %}
+  </div>
+</main>
+<footer>
+  <div class="container">
+    {% block footer %}
+        {{ app_info.about }}
+    {% endblock %}
+  </div>
+</footer>
+</html>

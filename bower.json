@@ -1,0 +1,19 @@
+{
+  "name": "archiwum_tymonradzik_pl",
+  "description": "Archiwum Tymona",
+  "main": "web/index.php",
+  "authors": [
+    "Miklaj <kamil.bregula@siecobywatelska.pl>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

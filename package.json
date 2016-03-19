@@ -1,0 +1,35 @@
+{
+  "name": "archiwum_tymonradzik_pl",
+  "version": "1.0.0",
+  "description": "Archiwum Tymona",
+  "main": "web/index.php",
+  "scripts": {
+    "install": "#bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mik-laj/archiwum_tymonradzik_pl"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mik-laj/archiwum_tymonradzik_pl/issues"
+  },
+  "homepage": "https://archiwum.tymonradzik.pl/",
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-bower": "0.0.11",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "yargs": "^3.31.0"
+  }
+}

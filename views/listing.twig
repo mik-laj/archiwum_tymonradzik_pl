@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <h2>Katalogi:</h2>
+    {% for directory in directories %}
+    <div class="panel">
+      <h3 class="panel--title">
+        <i class="fa fa-folder-o"></i>
+        <a href="/{{ directory.pathname }}">{{ directory.name }}</a>
+      </h3>
+    </div>
+    {% endfor %}
+
+    <h2>Pliki:</h2>
+    {% for file in files %}
+    <div class="panel">
+      <h3 class="panel--title">
+        <i class="{{ file.ext | ext_to_class }}"></i>
+        <a href="/public/{{ file.path }}">{{ file.title }}</a>
+      </h3>
+      <div class="panel--content">
+        <p>{{ file.description }}</p>
+        <div class="panel--meta">
+          <ul class="meta">
+            <li class="meta--item"><i class="fa fa-calendar-o"></i> {{ file.creation_time | date("m/d/Y") }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+{% endblock %}

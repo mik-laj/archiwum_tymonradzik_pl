@@ -1,0 +1,9 @@
+{
+    "require": {
+        "neutron/silex-filesystem-provider": "dev-master",
+        "oaugustus/finder-silex-provider": "dev-master",
+        "silex/silex": "~1.1",
+        "symfony/var-dumper": "^3.0",
+        "twig/twig": "^1.24"
+    }
+}
