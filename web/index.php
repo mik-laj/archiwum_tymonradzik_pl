@@ -38,44 +38,7 @@ $app->register(new SilexFinder\FinderServiceProvider());
 // Add globla variable and usefull functions
 $app->share($app->extend('twig', function ($twig, $app) use ($app_info) {
     $twig->addGlobal('app_info', $app_info);
-    $twig->addFilter(new Twig_SimpleFilter('ext_to_class', function ($ext) {
-        switch ($ext) {
-            case 'zip':
-            case 'rar':
-            case '7z':
-                return 'fa fa-file-archive-o';
-            case 'mp3':
-            case 'ogg':
-                return 'fa fa-file-audio-o';
-            case 'cpp':
-            case 'php':
-            case 'py':
-            case 'java':
-            case 'css':
-                return 'fa fa-file-code-o';
-            case 'xls':
-            case 'csv':
-                return 'fa fa-file-excel-o';
-            case 'jpg':
-            case 'png':
-            case 'gif':
-            case 'tiff':
-            case 'svg':
-                return 'fa fa-file-image-o';
-            case 'pdf':
-                return 'fa fa-file-pdf-o';
-            case 'txt':
-                return 'fa fa-file-text-o';
-            case 'mp4':
-            case 'avi':
-                return 'fa fa-file-video-o';
-            case 'doc':
-            case 'docx':
-            case 'odt':
-                return 'fa fa-file-word-o';
-        }
-        return 'fa fa-file-o';
-    }));
+    $twig->addFilter(new ExtToClassFilter());
     return $twig;
 }));
 

@@ -5,5 +5,8 @@
         "silex/silex": "~1.1",
         "symfony/var-dumper": "^3.0",
         "twig/twig": "^1.24"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
     }
 }
